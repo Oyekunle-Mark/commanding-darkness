@@ -41,7 +41,7 @@ func main() {
 				case duplicateVowel:
 					word = append(word[:vI+1], word[vI:]...)
 				case removeVowel:
-					word = append(word[:vI], word[:vI+1]...)
+					word = append(word[:vI], word[vI+1:]...)
 				}
 			}
 		}
