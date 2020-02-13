@@ -7,10 +7,18 @@ import (
 	"os"
 
 	"github.com/Oyekunle-Mark/commanding-darkness/thesaurus"
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	err := godotenv.Load()
+
+	if err != nil {
+		log.Fatalln("Error loading .env file")
+	}
+
 	apiKey := os.Getenv("BHT_APIKEY")
+
 	thesaurus := &thesaurus.BigHuge{APIKey: apiKey}
 	s := bufio.NewScanner(os.Stdin)
 
