@@ -6,6 +6,11 @@ import (
 	"net/http"
 )
 
+// Thesaurus is the common interface for all synonym finder word
+type Thesaurus interface {
+	synonyms(string) ([]string, error)
+}
+
 // BigHuge is the type of the synonyms service used
 type BigHuge struct {
 	APIKey string
