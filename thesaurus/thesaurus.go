@@ -20,6 +20,7 @@ type words struct {
 	Syn []string `json:"syn"`
 }
 
+// Synonyms returns a slice of words that are synonyms with term or an error
 func (b *BigHuge) Synonyms(term string) ([]string, error) {
 	var syns []string
 
