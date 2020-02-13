@@ -19,3 +19,6 @@ sprinkle
 domainify
 coolify
 synonyms
+
+# environment variables
+.env
