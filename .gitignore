@@ -20,6 +20,7 @@ domainify
 coolify
 synonyms
 available
+domainfinder
 
 # environment variables
 .env
