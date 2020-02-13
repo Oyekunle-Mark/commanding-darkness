@@ -32,7 +32,7 @@ func exists(domain string) (bool, error) {
 	return true, nil
 }
 
-var marks = map[bool]string{true: " ", false: " "}
+var marks = map[bool]string{true: "✓", false: "❌"}
 
 func main() {
 	s := bufio.NewScanner(os.Stdin)
